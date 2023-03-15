@@ -1,0 +1,9 @@
+condensing files
+create 1 form with alternative route for "create account"
+
+LoginForm 
+1. SignInForm.js
+
+CreateAccount.js
+1. SignUp.js
+2.

@@ -1,3 +1,4 @@
+/*
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase';
 
@@ -18,3 +19,4 @@ const AuthDetails = () => {
 };
 
 export default AuthDetails;
+*/

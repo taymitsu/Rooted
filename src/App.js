@@ -1,17 +1,15 @@
-import './App.css';
-import SignIn from './components/auth/SignIn';
-import SignOutButton from './components/auth/SignOut';
-import SignUp from './components/auth/SignUp';
-import AuthDetails from './components/AuthDetails';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import SignInForm from './components/SignInForm';
+import CreateAccount from './components/CreateAccount';
 
 function App() {
   return (
     <div className="App">
-      Rooted
-      <SignIn />
-      <SignUp />
-      <AuthDetails />
-      <SignOutButton />
+      <Switch>
+        <Route exact path="/" component={SignInForm} />
+        <Route path="/create-account" component={CreateAccount} />
+      </Switch>
     </div>
   );
 }
