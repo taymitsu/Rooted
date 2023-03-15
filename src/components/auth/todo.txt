@@ -1,9 +1,15 @@
-condensing files
-create 1 form with alternative route for "create account"
+TO DO 03/14:
+✅condensing files
+✅create 1 form with alternative route for "create account"
+✅-redirecting to create account page correctly 
 
-LoginForm 
-1. SignInForm.js
+✅LoginForm 
+✅1. inlcude SignInForm.js
+✅2. Add Sign In with Google 
 
-CreateAccount.js
-1. SignUp.js
-2.
+✅CreateAccount.js > SignUp.js
+
+1. Create confirmation message when client is signed in
+  -redirect to home Forum page > Home.js
+  -SignOut.js included on this page
+
