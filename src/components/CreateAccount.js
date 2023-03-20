@@ -1,18 +1,19 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from 'react'
-import { auth } from '../firebase'
-
-
+import React, { useState } from 'react';
+import { auth } from '../firebase';
+import { useHistory } from 'react-router-dom';
 
 function CreateAccount() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
 
   const CreateAccount = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      console.log(userCredential)
+      console.log(userCredential);
+      history.push('/sign-in'); // redirect to sign-in page, after account created
     })
     .catch((error) => {
       console.log(error);
@@ -35,10 +36,10 @@ function CreateAccount() {
           placeholder="Enter password"
           onChange={(e) => setPassword(e.target.value)}
         ></input>
-        <button type="submit">create Account</button>
+        <button type="submit">Create Account</button>
       </form>
     </div>
   )
 }
 
-export default CreateAccount
+export default CreateAccount;

@@ -2,11 +2,12 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../firebase";
-import { Link } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 function SignInForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
 
   const signInForm = (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ function SignInForm() {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log("userCredential", userCredential);
+        history.push("/home")
       })
       .catch((error) => {
         console.log("error", error);
@@ -47,9 +49,11 @@ function SignInForm() {
           placeholder="Enter password"
           onChange={(e) => setPassword(e.target.value)}
         ></input>
-        <button type="submit">Sign In</button>
+        <NavLink to="/home">
+          <button type="submit">Sign In</button>
+        </NavLink>
         <button onClick={signInWithGoogle}>Sign In With Google</button>
-        <Link to="/create-account">Create Account</Link>
+        <NavLink to="/create-account">Create Account</NavLink>
       </form>
     </div>
   );

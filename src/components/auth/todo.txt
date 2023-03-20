@@ -9,7 +9,11 @@ TO DO 03/14:
 
 ✅CreateAccount.js > SignUp.js
 
-1. Create confirmation message when client is signed in
+1. Create confirmation component when client is signed in > AuthDetails.js
   -redirect to home Forum page > Home.js
   -SignOut.js included on this page
 
+2. Create Navbar component 
+  -Home (like instagram including posts: text and photos)
+  -Feed 
+  -Jungle
