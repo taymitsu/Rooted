@@ -9,11 +9,22 @@ TO DO 03/14:
 
 ✅CreateAccount.js > SignUp.js
 
-1. Create confirmation component when client is signed in > AuthDetails.js
-  -redirect to home Forum page > Home.js
-  -SignOut.js included on this page
+✅1. Create confirmation component when client is signed in > AuthDetails.js
+  ✅-redirect to home Forum page > Home.js
+  ✅-SignOut.js included on this page
+      SignOutButton should reroute to Sign In
 
-2. Create Navbar component 
-  -Home (like instagram including posts: text and photos)
-  -Feed 
-  -Jungle
+2. ✅Create Navbar component 
+  ✅-Home (like instagram including posts: text and photos)
+  ✅-Feed 
+  ✅-Jungle
+    **Connect new empty pages for the above
+
+3. Configure buttons
+  Create Account -> SignIn 
+    Add confirmation message for new acocunt created?
+  Sign In -> Home (url changing, new page NOT rendering)
+
+4. Create Landing Page 
+  Small explanation
+  Sign In/Create Account CTAs included 

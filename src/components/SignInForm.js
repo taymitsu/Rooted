@@ -2,7 +2,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../firebase";
-import { NavLink, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function SignInForm() {
   const [email, setEmail] = useState("");
@@ -27,6 +27,7 @@ function SignInForm() {
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log("Google Sign-In successful.", result);
+        history.push('/home')
       })
       .catch((error) => {
         console.log("Google Sign-In error.", error);
@@ -49,11 +50,9 @@ function SignInForm() {
           placeholder="Enter password"
           onChange={(e) => setPassword(e.target.value)}
         ></input>
-        <NavLink to="/home">
-          <button type="submit">Sign In</button>
-        </NavLink>
+        <button type="submit" onClick={signInForm}>Sign In</button>
         <button onClick={signInWithGoogle}>Sign In With Google</button>
-        <NavLink to="/create-account">Create Account</NavLink>
+        <Link to="/create-account">Create Account</Link>
       </form>
     </div>
   );
