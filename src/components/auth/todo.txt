@@ -28,3 +28,5 @@ TO DO 03/14:
 4. Create Landing Page 
   Small explanation
   Sign In/Create Account CTAs included 
+
+5. Deploy with githug pages 
