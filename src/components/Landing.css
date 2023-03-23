@@ -1,0 +1,24 @@
+.landing-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+  background-image: url(images/exposedroots.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50vw;
+}
+
+.right {
+  flex: 1;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: mistyrose;
+  width: 50vw;
+}

@@ -1,0 +1,17 @@
+
+.create-account-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}

@@ -4,12 +4,14 @@ import SignInForm from './components/SignInForm';
 import CreateAccount from './components/CreateAccount';
 import Home from './components/Home';
 import TestComponent from './components/TestComponent';
+import Landing from './components/Landing';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Switch>
+          <Route exact path="/landing" component={Landing} />
           <Route exact path="/sign-in" component={SignInForm} />
           <Route exact path="/create-account" component={CreateAccount} />
           <Route exact path="/home" component={Home} />

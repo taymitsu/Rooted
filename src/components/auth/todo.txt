@@ -25,8 +25,17 @@ TO DO 03/14:
     Add confirmation message for new acocunt created?
   Sign In -> Home (url changing, new page NOT rendering)
 
-4. Create Landing Page 
+4. ✅Create Landing Page -> Landing.js 
   Small explanation
   Sign In/Create Account CTAs included 
 
-5. Deploy with githug pages 
+  MERGE LANDING AND SIGNIN.JS
+  LANDING ON THE LEFT, CREATE ACCOUNT ON THE RIGHT, CTA SIGNINFORM - renders on page 
+
+✅5. Deploy with githug pages 
+  ✅install gh-pages
+  ✅PACKAGE.JSON
+    ✅add "homepage": "https://taymitsu.github.io/Rooted",
+    ✅"scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
